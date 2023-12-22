@@ -3,27 +3,27 @@ pipeline{
     stages{
         stage('Roy'){
             steps{
-                sh 'action1'
+                echo "action1"
             }
         }
         stage('Rogers'){
             steps{
-                sh 'action2'
+                echo "action2"
             }
         }
         stage('Silas'){
             steps{
-                sh 'action3'
+                echo "action3"
             }
         }
         stage('Warami'){
             steps{
-                sh 'action4'
+                echo "action4"
             }
         }
         stage('Abiola'){
             steps{
-                sh 'action5'
+                echo "action5"
             }
         }
     }

@@ -1,40 +1,30 @@
 pipeline{
-    agent any 
+    agent any
     stages{
-      stage('1-git clone'){
-        steps{
-       sh 'whoami'
+        stage('Roy'){
+            steps{
+                sh 'action1'
+            }
         }
-      }
-      stage('2-system check'){
-        steps{
-          sh ' echo "walk...." '
-          sh 'lscpu'
+        stage('Rogers'){
+            steps{
+                sh 'action2'
+            }
         }
-      }
-      stage('3-memory check'){
-        steps{
-          sh ' echo "walk...." '
-          sh 'cat /etc/passwd | grep ubuntu'
+        stage('Silas'){
+            steps{
+                sh 'action3'
+            }
         }
-      }
-      stage('4-os stats'){
-        steps{
-          sh ' echo "walk...." '
-          sh 'whoami'
+        stage('Warami'){
+            steps{
+                sh 'action4'
+            }
         }
-      }
-      stage('5-last movement'){
-        steps{
-          sh ' echo "The final level"'
-          sh 'pwd'
+        stage('Abiola'){
+            steps{
+                sh 'action5'
+            }
         }
-      }
-      stage('6-webhook testing'){
-        steps{
-          sh ' echo "walk...." '
-          sh 'ps -ef'
-        }
-      }
     }
-  }
+}
